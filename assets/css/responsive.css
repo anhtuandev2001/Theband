@@ -1,0 +1,145 @@
+/* pc */
+@media (min-width: 1024px){
+    .icon-menu{
+        display: none;
+    }
+}
+
+/* Tablet: */
+@media (min-width: 740px) and (max-width:1023px){
+    
+    .icon-menu{
+        display: none;
+    }
+
+    .info{
+        line-height: 2;
+    }
+    
+    #content .feedback-message{
+        padding: 13px 11px;
+        margin-top: 13px;
+    }
+    
+    #content .feedback-send{
+        padding: 14px;
+    }
+    
+    .input{
+        padding: 13px 11px;
+    }
+
+    #footer .icon-footer ti{
+        padding: 15px;
+        display: inline-block;
+    }
+    
+    .footer-link {
+        padding: 11px;
+        display: inline-block;
+    }
+
+    #content .buy-tickets{
+        padding: 13px 16px;
+    }
+
+
+}
+/* tablet vs mobile */
+@media (max-width: 1023px){
+    #content .feedback-send{
+        font-size: 17px;
+    }
+
+    #content .buy-tickets{
+        font-size: 17px;
+    }
+}
+
+/* Mobile: */
+@media (max-width: 739px){
+
+    .s-col-full{
+        width: 100%;
+    }
+
+    #header{
+        overflow: hidden;
+        }
+
+    .nav-heading li {
+        display: block;
+    }
+
+    .nav-heading {
+        display: block;
+    }
+
+    .nav-heading >li:first-child {
+        display: inline-block;
+    }
+
+    .nav-subheading{
+        position: initial;
+        background-color: #231a1a;
+        padding: 0 24px;
+    }
+    
+    .nav-subheading li{
+        padding: 15px 16px;
+    }
+
+    .nav-subheading li a{
+        color: white;
+    }
+    
+    .icon-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icon-search{
+        display: none;
+    }
+
+    #slider .section{
+        display: none;
+    }
+
+    #content .member-avatar{
+        width: 60%;
+    }
+
+    #content .contact-feedback{
+        width: 100%;
+        float: none;
+    }
+    
+    #content .contact-info{
+        float: none;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    
+    .feedback-email{
+        margin-top: 8px;
+    }
+    
+    #content .input{
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    #content .feedback-send{
+        width: 100%;
+    }
+    
+    #content .buy-tickets{
+        width: 100%;
+        padding: 13px 16px;
+    }
+    
+}
+

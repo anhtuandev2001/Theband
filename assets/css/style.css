@@ -1,0 +1,528 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* dùng chung */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.row{
+    margin: 0 -8px;
+}
+
+.col-third{
+    float: left;
+    width: 33.33333%;
+}
+
+.col-haf{
+    float: left;
+    width: 50%;
+}
+
+.input{
+    padding: 11px;
+    border: solid #ccc 1px;
+}
+
+.text-white{
+color: white !important;
+}
+
+.clear{
+    clear: both;
+}
+
+.mt-16{
+    margin-top: 16px ;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.modal.open{
+    display: flex;
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+/*  */
+
+/* nav */
+.nav-heading{
+    display: inline-block;
+    height: 100%;
+}
+
+
+.nav-heading li{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.nav-heading >li >a{
+    display: block;
+    padding: 0 24px;
+    line-height: 46px;
+    font-size: 15px;
+    color: white;
+}
+
+.nav-heading >li:hover >a{
+   background-color:#ccc;
+   color: black;
+}
+
+.nav-heading li a{
+    text-decoration:none;
+    height: 100%;
+}
+
+.nav-heading li:hover .nav-subheading {
+    display: block;
+}
+
+.nav-subheading{
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.nav-subheading li:hover {
+    background-color: #ccc;
+}
+
+.nav-subheading li {
+    display: block;
+    min-width: 160px;
+    padding: 15px 16px;
+}
+
+.nav-subheading li a{
+    font-size: 15px;
+    color: black;
+}
+
+.icon-search:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.icon-search{
+    float: right;
+    padding: 14px;
+    font-size: large;
+    color: white;
+    height: 100%;
+}
+
+.icon-menu:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.icon-menu{
+    float: right;
+    padding: 12px;
+    font-size: large;
+    color: white;
+}
+
+/* phần slider */
+#slider {
+    position: relative;
+    top: 46px;
+    padding-top: 50%;
+    margin: 0 auto 46px auto;
+    text-align: center;
+    background: url(../img/slider/LosAngeles.jpeg) top center / cover no-repeat;
+}
+
+#slider .section{
+    position: absolute;
+    display: inline;
+    left: 0;
+    right: 0;
+    bottom: 53px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
+#slider .section-heading{
+    margin: 17px;
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .section-subheading{
+    font-size: 15px;
+}
+
+/* phần content */
+#content{
+
+}
+
+.content-container {
+    width: 800px;
+    max-width: 100%;
+    padding: 74px 16px 0;
+    margin: auto;
+    padding-bottom: 112px;
+    text-align: center;
+}
+
+#content .content-section{
+
+}
+
+#content .section-heading{
+    line-height: 45px;
+    font-size: 30px;
+    letter-spacing: 4px;    /* khoảng cách giữa các chữ cái */
+}
+
+#content .section-subheading{
+    margin: 17px 0;
+    opacity: 0.6;
+    font-style: italic;     /* in nghiêng */
+}
+
+/* the band */
+#content .band-about{
+    line-height: 1.6;
+    text-align: justify;    /* căn đều 2 bên chữ */
+    font-size: 15px;
+}
+
+#content .itemt-list{
+    margin-top: 62px;
+}
+
+#content .member-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#content .member-avatar{
+    width: 154px;
+    border-radius: 4px;        /* bo tròn ảnh */
+}
+
+/* tour dates */
+#content .background-tour{
+    background-color: black;
+}
+
+#content .ticket-time{
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+#content .ticket-time li{
+    padding: 8px 15px;
+    border-bottom: solid #ddd 1px;
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+    list-style: none;
+    color: #757575;
+}
+
+#content .sold-out{
+    padding: 3px 8px;
+    margin-left: 16px;
+    background-color: red;
+}
+
+.icon-quantity {
+    display: block;
+    float: right;
+    padding: 3px 10px;
+    background: black;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+#content .places{
+}
+
+#content .places-img:hover{
+    opacity: 0.6;
+}
+
+
+#content .places-img{
+    display: block;
+    width: 100%;
+}
+
+#content .places-container{
+    padding: 0 8px;
+}
+
+#content .places-body{
+    display: block;
+    width: 100%;
+    padding:0 16px 16px 16px;
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+#content .places-city{
+    padding: 17px 0;
+    font-weight: 700;
+}
+
+#content .places-time{
+    padding-bottom:15px ;
+    opacity: 0.6;
+}
+
+#content .places-content{
+    margin-bottom: 28px;
+    
+}
+
+#content .buy-tickets:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#content .buy-tickets{
+    padding: 8px 16px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-decoration:none;
+    border:none;
+}
+
+/* contact */
+#content .contact-list{
+    margin-top: 49px;
+    text-align: justify;
+}
+
+#content .contact-info{
+    line-height: 27px;
+    font-size: 18px;
+}
+
+.icon-location{
+    padding-right: 13px;
+}
+
+.icon-mobile{
+    padding-right: 13px;
+}
+
+.icon-email{
+    padding-right: 13px;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
+.contact-info a {
+    opacity: 0.6;
+}
+
+#content .contact-feedback{
+    font-size: 15px;
+}
+
+
+#content .feedback-message{
+    width: 100%;
+    padding: 11px;
+    margin-top: 8px;
+    border: solid #ccc 1px;
+}
+
+#content .feedback-send:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#content .feedback-send{
+    float: right;
+    padding: 11px;
+    margin-top: 16px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    -webkit-appearance: none;
+}
+
+/* map */
+.map{
+    padding-bottom: 50%;
+    background: url(../map/map.jpg) center / cover no-repeat;
+}
+
+/* footer */
+#footer{
+    text-align: center;
+}
+
+.icon-footer{
+    padding: 19px 0;
+    line-height: 24px;
+    font-size: 24px;
+}
+
+#footer .icon-footer ti:hover{
+    color: #ccc; 
+}
+
+#footer .icon-footer ti{
+    padding: 5px;
+}
+
+#footer .footer-container{
+    padding: 51px 0;
+    font-size: 15px;
+}
+
+#footer .footer-coppyright{
+    opacity: 0.6;
+}
+
+.footer-link {
+    color: black;
+}
+
+/* modal */
+.modal{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0 ,0.3);
+}
+
+.modal-body{
+    position: relative;
+    width: 900px;
+    min-height: 467px;
+    margin: 0 20px;
+    background-color: white;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 128px;
+    background-color: #009688;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 17px;
+    color: white;
+}
+
+.icon-close{
+}
+
+.icon-bag{
+    padding-right: 18px;
+}
+
+.modal-container{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.modal-label{
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 13px;
+    font-size: 15px;
+}
+
+.modal-input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.modal-pay:hover{
+    background-color:#ccc;
+    color: #000;
+}
+
+.modal-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 17px;
+    margin-top: 16px;
+    margin-bottom: 31px;
+    background-color: #009688;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.modal-footer{
+    margin-right: 14px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.modal-help{
+    color: #2196f3;
+}
+
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
